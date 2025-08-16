@@ -22,70 +22,79 @@ insurance-premium-prediction/
 ├── requirements.txt # Dependencies
 ├── README.md
 
+
 ---
 
 ## Features Used for Prediction
 The model requires the following features in JSON format:
 
-- `Age`  
-- `Weight`  
-- `BMI`  
-- `AnyChronicDiseases` (0 or 1)  
-- `NumberOfMajorSurgeries`  
-- `SeverelyObese` (0 or 1)  
-- `BMI_RiskScore`  
-- `HighSurgeryRisk` (0 or 1)  
-- `AgeGroup` (e.g., 'Young', 'Middle', 'Senior')  
+- `Age`
+- `Weight`
+- `BMI`
+- `AnyChronicDiseases` (0 or 1)
+- `NumberOfMajorSurgeries`
+- `SeverelyObese` (0 or 1)
+- `BMI_RiskScore`
+- `HighSurgeryRisk` (0 or 1)
+- `AgeGroup` (e.g., 'Young', 'Middle', 'Senior')
 
-Target variable: `PremiumPrice`
+**Target variable:** `PremiumPrice`
 
 ---
 
 ## How to Run the Flask API
 
-### 1️⃣ Clone the repository
+### Step 1: Clone the repository
 ```bash
 git clone https://github.com/DrVipulaSharma/insurance-premium-prediction.git
 cd insurance-premium-prediction
 
- 2️⃣ Create a virtual environment 
+
+### **Step 2: Create a virtual environment** 
 python -m venv flask_new
+# Activate the environment:
 flask_new\Scripts\activate    # Windows
 # OR
 source flask_new/bin/activate # macOS/Linux
 
-3️⃣ Install dependencies
+### **Step 3: Install dependencies**
 pip install -r requirements.txt
 
-4️⃣ Run the Flask app
+### **Step 4: Run the Flask app**
 python app.py
 
-5️⃣ Example API Request
+### **Step 5: Example API Request**
 
 Using curl:
+
 curl -X POST http://127.0.0.1:5000/predict \
 -H "Content-Type: application/json" \
--d "{
-    \"Age\":40,
-    \"Weight\":75,
-    \"BMI\":24.5,
-    \"AnyChronicDiseases\":0,
-    \"NumberOfMajorSurgeries\":1,
-    \"SeverelyObese\":0,
-    \"BMI_RiskScore\":1.2,
-    \"HighSurgeryRisk\":0,
-    \"AgeGroup\":\"Middle\"
-}"
-Response:
-{
-  "predicted_premium": 26625.0
-}
-Streamlit App
+-d '{
+    "Age":40,
+    "Weight":75,
+    "BMI":24.5,
+    "AnyChronicDiseases":0,
+    "NumberOfMajorSurgeries":1,
+    "SeverelyObese":0,
+    "BMI_RiskScore":1.2,
+    "HighSurgeryRisk":0,
+    "AgeGroup":"Middle"
+}'
+Example response:
+
+{"predicted_premium": 26625.0}
+
+
+## **Streamlit App**
 
 Run the Streamlit frontend with:
+
 streamlit run streamlit_app.py
+
+
 This launches a web interface where users can input their details and get premium predictions.
-## Model & Performance
+
+## **Model & Performance**
 
 | Model               | RMSE     | MAE      | R²      |
 |--------------------|----------|----------|---------|
@@ -97,12 +106,12 @@ This launches a web interface where users can input their details and get premiu
 
 **Best Model:** `RandomForestRegressor(n_estimators=200, random_state=42)`
 
-## Requirements
+## **Requirements**
 
 All dependencies are listed in requirements.txt. It includes Flask, Streamlit, pandas, scikit-learn, and other necessary packages.
 
 
-## Notes & Usage
+## **Notes & Usage**
 
 - **File Placement**: Make sure `insurance_premium_model.pkl` and `app.py` are in the same directory before running the Flask API.
 
