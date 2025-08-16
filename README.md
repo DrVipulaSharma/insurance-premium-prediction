@@ -15,10 +15,11 @@ Easily input customer details and get real-time premium predictions.
 
 🔗 **Try the Live Streamlit App:** [https://insurance-premium-prediction-ehrjlq6mmmxdvhunwl3acr.streamlit.app/](https://insurance-premium-prediction-ehrjlq6mmmxdvhunwl3acr.streamlit.app/)
 
+![Streamlit Demo Screenshot](assets/streamlit_demo.png)
 
-![Streamlit Demo Screenshot](assets/streamlit_demo.png)  
+
+![Streamlit Demo Screenshot](Streamlit%20screenshot.png)
 *Example Streamlit output showing premium prediction.*
-
 ---
 
 🔹 **Flask API (JSON Request/Response)**  
