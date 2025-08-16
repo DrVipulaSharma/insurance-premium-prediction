@@ -27,6 +27,34 @@ Easily input customer details and get real-time premium predictions.
 Send customer details and get predictions via REST API.  
 
 **Request:**  
+<details> <summary>Example JSON Request Body</summary>
+{
+  "Age": 40,
+  "Weight": 75,
+  "BMI": 24.5,
+  "AnyChronicDiseases": 0,
+  "NumberOfMajorSurgeries": 1,
+  "SeverelyObese": 0,
+  "BMI_RiskScore": 1.2,
+  "HighSurgeryRisk": 0,
+  "AgeGroup": "Middle"
+}
+
+</details> <details> <summary>Example curl Command</summary>
+curl -X POST http://127.0.0.1:5000/predict \
+-H "Content-Type: application/json" \
+-d '{
+  "Age": 40,
+  "Weight": 75,
+  "BMI": 24.5,
+  "AnyChronicDiseases": 0,
+  "NumberOfMajorSurgeries": 1,
+  "SeverelyObese": 0,
+  "BMI_RiskScore": 1.2,
+  "HighSurgeryRisk": 0,
+  "AgeGroup": "Middle"
+}'
+
 
 ---
 
