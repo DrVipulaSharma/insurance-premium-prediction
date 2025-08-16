@@ -22,6 +22,7 @@ Easily input customer details and get real-time premium predictions.
 *Example Streamlit output showing premium prediction.*
 ---
 
+
 🔹 **Flask API (JSON Request/Response)**  
 Send customer details and get predictions via REST API.  
 
