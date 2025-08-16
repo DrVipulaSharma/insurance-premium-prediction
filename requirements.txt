@@ -1,6 +1,6 @@
-streamlit==1.24.0      # latest stable version
-flask==2.3.2            # compatible with Streamlit
-pandas==2.0.3            # stable version
-numpy==1.25.2            # compatible version
-scikit-learn==1.6.1      # same as your model
-joblib==1.5.1    
+
+scikit-learn==1.6.1
+joblib==1.5.1
+pandas
+numpy
+streamlit
