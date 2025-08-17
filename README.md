@@ -20,6 +20,10 @@ Easily input customer details and get real-time premium predictions.
 *Example Streamlit output showing premium prediction.*
 
 ---
+🔸 **Tableau Interactive Dashboard:**  
+[Health Insurance Premium Analysis – Tableau Dashboard](https://public.tableau.com/app/profile/vipula.sharma/viz/HealthInsurancePremiumAnalysisonTableauPublic1/Story1)
+
+---
 
 🔹 **Flask API (JSON Request/Response)**  
 Send customer details and get predictions via REST API.
