@@ -5,6 +5,8 @@
 ![Streamlit](https://img.shields.io/badge/Streamlit-App-red.svg)
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-ML-yellow.svg)
 ![License](https://img.shields.io/badge/License-MIT-purple.svg)
+[![Read on Medium](https://img.shields.io/badge/Read_on-Medium-black?logo=medium)](https://medium.com/@drvipulasharma/transforming-insurance-pricing-with-machine-learning-from-eda-to-deployment-076d9e5bc5c5)
+
 
 ---
 
@@ -78,6 +80,12 @@ It includes:
 - Deployment via Flask API and Streamlit App
 
 The model helps estimate premiums for individuals based on their demographic and health data.
+
+---
+
+## 📘 Medium Blog
+For an in-depth walkthrough of the entire ML pipeline (EDA, Modeling, Deployment), read my Medium post here:
+[Transforming Insurance Pricing with Machine Learning: From EDA to Deployment](https://medium.com/@drvipulasharma/transforming-insurance-pricing-with-machine-learning-from-eda-to-deployment-076d9e5bc5c5)
 
 ---
 
