@@ -10,6 +10,12 @@
 
 ---
 
+## 5-Minute Demo (Loom)
+Watch the walkthrough here:  
+[Insurance Premium Prediction – Demo](https://www.loom.com/share/930cc603bae24763acc784f3121fb6f1)
+
+---
+
 ## Quick Demo
 
 🔹 **Streamlit App (User Interface)**  
